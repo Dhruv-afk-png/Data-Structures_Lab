@@ -6,4 +6,6 @@ Write a C program to check whether a given element is present in an array of ele
 
 ## Code:-
 
-
+<p align="center">
+  <img src="Linear_Search.c" width="900">
+</p>
