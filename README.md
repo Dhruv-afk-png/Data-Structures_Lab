@@ -3,25 +3,27 @@ Write a C program to check whether a given element is present in an array of ele
 
 ---
 
-## Algorithm
-1. Start.  
-2. Read the marks obtained by the student.
-3. If marks > 40
-   → Display “Pass”.
-4. Else
-   → Display “Fail”.
-5. Stop.
----
+## CODE:-
+#include <stdio.h>
 
-## Flowchart
-![Flowchart](Stud_Status.drawio.png)
+int main() {
+    int n, key, i, found = 0;
+    scanf("%d", &n);
+    int arr[n];
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    scanf("%d", &key);
 
----
-
-## Execution
-<p align="center">
-  <img src="Pass or Fail.png" width="900">
-</p>
-
-
-b
+    for(i=0;i<n;i++){
+		if(arr[i] == key){
+			found = 1;
+			break;
+		}
+	}
+	if(found==1){
+		printf("found at position %d\n", i);
+	}else{
+		printf("%d not found\n", key);
+	}
+}
